@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Warn: no test specified\" && exit 0",
     "storybook": "start-storybook -p 6006 -s public",
-    "build": "build-storybook -o public",
-    "build-storybook": "build-storybook",
+    "build": "build-storybook",
+    "build-storybook": "build-storybook -o public",
     "stylelint:test": "stylelint **/*.css",
     "stylelint:fix": "stylelint **/*.css --fix",
     "generateChangelog": "standard-version"

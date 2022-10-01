@@ -6,6 +6,7 @@
 #on:
   #push:
     #branches: [ "main" ]
+    #paths: ["storybook/**"] # trigger the action only when files change in the folders defined here
     
   #workflow_dispatch: # enable manual workflow run option
 
@@ -20,9 +21,10 @@
         #run: |
           #npm ci
           #npm run build-storybook
+        #working-directory: ./storybook
 
       #- name: Deploy
         #uses: JamesIves/github-pages-deploy-action@v4
         #with:
           #branch: gh-pages
-          #folder: public # output folder from `npm run build-storybook`
+          #folder: ./storybook/public # output folder from `npm run build-storybook`

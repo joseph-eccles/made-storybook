@@ -1,0 +1,48 @@
+{
+  "name": "storybook-html",
+  "version": "2.0.0-SNAPSHOT",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Warn: no test specified\" && exit 0",
+    "storybook": "start-storybook -p 6006",
+    "build": "build-storybook",
+    "build-storybook": "build-storybook",
+    "stylelint:test": "stylelint **/*.css",
+    "stylelint:fix": "stylelint **/*.css --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@geometricpanda/storybook-addon-badges": "^0.2.2",
+    "@storybook/addon-a11y": "^6.5.10",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/react": "^6.5.10",
+    "babel-loader": "^8.2.2",
+    "chromatic": "^6.5.4",
+    "copyfiles": "^2.4.1",
+    "loki": "^0.30.3",
+    "react": "^17.0.2",
+    "react-datepicker": "^4.6.0",
+    "react-dom": "^17.0.2"
+  },
+  "loki": {
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.app",
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      },
+      "chrome.iphone7": {
+        "target": "chrome.app",
+        "preset": "iPhone 7"
+      }
+    }
+  }
+}

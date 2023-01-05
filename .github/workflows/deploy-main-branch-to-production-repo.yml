@@ -15,7 +15,7 @@ jobs:
       - name: deploy-main-branch-to-production-repo
         uses: wei/git-sync@v3
         with:
-          source_repo: "https://joseph-eccles:${{ secrets.DEPLOY }}@github.com/joseph-eccles/made-development.git"
+          source_repo: "https://joseph-eccles:${{ secrets.Made }}@github.com/joseph-eccles/made-development.git"
           source_branch: "main"
-          destination_repo: "https://joseph-eccles:${{ secrets.DEPLOY }}@github.com/joseph-eccles/made.git"
+          destination_repo: "https://joseph-eccles:${{ secrets.Made }}@github.com/joseph-eccles/made.git"
           destination_branch: "main"

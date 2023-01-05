@@ -1,0 +1,21 @@
+name: Deploy Main Branch to Production Repo
+on:
+  push:
+    branches:
+      - main # if any push happens on branch `release`, run this workflow
+    # paths: [".storybook/**", "src/**"] # trigger the action only when files change in the folders defined here
+  
+  workflow_dispatch: # enable manual workflow run option
+
+jobs:
+  copy-release-branch-to-release-repo:
+    # needs: build-and-deploy-pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy-main-branch-to-production-repo
+        uses: wei/git-sync@v3
+        with:
+          source_repo: "https://joseph-eccles:${{ secrets.PAT_ACTIONS }}@github.com/joseph-eccles/made-storybook-development.git"
+          source_branch: "main"
+          destination_repo: "https://joseph-eccles:${{ secrets.PAT_ACTIONS }}@github.com/joseph-eccles/made-storybook.git"
+          destination_branch: "main"

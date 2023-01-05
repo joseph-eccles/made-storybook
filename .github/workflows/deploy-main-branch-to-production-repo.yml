@@ -1,8 +1,8 @@
 name: Deploy Main Branch to Production Repo
 on:
-  push:
-    branches:
-      - main # if any push happens on branch `release`, run this workflow
+  # push:
+    # branches:
+      # - main # if any push happens on branch `release`, run this workflow
     # paths: [".storybook/**", "src/**"] # trigger the action only when files change in the folders defined here
   
   workflow_dispatch: # enable manual workflow run option

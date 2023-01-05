@@ -6,34 +6,17 @@ import { Meta, Canvas, Story } from "@storybook/addon-docs/blocks";
 
 ## Install
 
-Made for Developers packages can be downloaded via the internal Mastercard Artifactory.
+Made for Developers packages can be downloaded via the Mastercard GitHub.
 
-Before moving further, please make sure you have Node.js installed on your machine. You can install the latest version through Self Service.
+Before moving further, please make sure you have Node.js installed on your machine.
 
 If you're planning on using Made packages in a project that doesn't yet use Node Package Manager, you'll have to first create a package.json file. You can read more on how to do this in the npm documentation.
 
-As Made. for Developers packages are hosted on the internal Mastercard Artifactory you will need to 
-to set your registry to point to the virtual repository in Artifactory called npm-all.
-
-To configure all projects to use the Mastercard Artifactory globally run this the command line.
-
-```
-npm config set registry https://artifacts.mastercard.int/artifactory/api/npm/npm-all
-```
-
-To temporarily change the NPM registry to the Mastercard artifactory:
-
-```
-npm install --registry https://artifacts.mastercard.int/artifactory/api/npm/npm-all
-```
-
-To install, run the following command(s) in your terminal in your project root directory (where package.json lives),you will need to log in to the Mastercard firewall before running this command. This will install all of the packages into the node_modules/@made-mc/ directory.
+To install, run the following command(s) in your terminal in your project root directory (where package.json lives). This will install all of the packages into the node_modules/@made-mc/ directory.
 
 ```
 npm install @mc-made/design-tokens@latest
 npm install @mc-made/css@latest
-npm install @mc-made/icons@latest
-npm install @mc-made/fonts@latest
 ```
 
 ### Usage
@@ -51,7 +34,6 @@ To import in SCSS, include this at the beginning of your main SCSS partial:
 ```
 "[path-to-directory]/node_modules/@mc-made/design-tokens/web/theme/[theme-name]/tokens";
 "[path-to-directory]/node_modules/@mc-made/css/made.min.css";
-"[path-to-directory]/node_modules/@mc-made/fonts/made-for-mc.css";
 ```
 
 You can also import the stylesheets with [CSS custom properties (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties). 
@@ -98,8 +80,7 @@ To fetch e.g. a Design Tokens file using the above format, you would write it li
 
 ## Migrating to Made.?
 
-Ready to  migrate your current code base to include Made. assets? Each project is different so <a href="https://teams.microsoft.com/l/channel/19%3a2f8b0424ebb647dc8f647f3aa1986733%40thread.skype/%25F0%259F%2592%258EDesign%2520Systems?groupId=50277c80-d4e5-4acf-806c-256c7b81fae9&tenantId=f06fa858-824b-4a85-aacb-f372cfdc282e" target="_blank">get in touch with the Made. team </a> 
-and we can support the migration process and provide solutions on what adoption method suits your projects needs. 
+Ready to  migrate your current code base to include Made. assets? Each project is different so email <a href="mailto:made@mastercard.com">made@mastercard.com</a> to get in touch with the Made. team and we can support the migration process and provide solutions on what adoption method suits your projects needs. 
 
 ---
 
@@ -108,7 +89,7 @@ and we can support the migration process and provide solutions on what adoption 
 
 ### Supported browsers
 
-Made components are supported in the following browsers. <a href="https://teams.microsoft.com/l/channel/19%3a2f8b0424ebb647dc8f647f3aa1986733%40thread.skype/%25F0%259F%2592%258EDesign%2520Systems?groupId=50277c80-d4e5-4acf-806c-256c7b81fae9&tenantId=f06fa858-824b-4a85-aacb-f372cfdc282e" target="_blank">Get in touch here</a> to report any issues.
+Made components are supported in the following browsers. <a href="https://github.com/Mastercard/made/issues" target="_blank">Get in touch here</a> to report any issues.
 
 | Browser        | Version |
 | -------------- | ------- |

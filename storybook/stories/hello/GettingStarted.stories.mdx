@@ -1,0 +1,130 @@
+import { Meta, Canvas, Story } from "@storybook/addon-docs/blocks";
+
+<Meta title="Hello/Getting Started" />
+
+# Getting Started
+
+## Install
+
+Made for Developers packages can be downloaded via the internal Mastercard Artifactory.
+
+Before moving further, please make sure you have Node.js installed on your machine. You can install the latest version through Self Service.
+
+If you're planning on using Made packages in a project that doesn't yet use Node Package Manager, you'll have to first create a package.json file. You can read more on how to do this in the npm documentation.
+
+As Made. for Developers packages are hosted on the internal Mastercard Artifactory you will need to 
+to set your registry to point to the virtual repository in Artifactory called npm-all.
+
+To configure all projects to use the Mastercard Artifactory globally run this the command line.
+
+```
+npm config set registry https://artifacts.mastercard.int/artifactory/api/npm/npm-all
+```
+
+To temporarily change the NPM registry to the Mastercard artifactory:
+
+```
+npm install --registry https://artifacts.mastercard.int/artifactory/api/npm/npm-all
+```
+
+To install, run the following command(s) in your terminal in your project root directory (where package.json lives),you will need to log in to the Mastercard firewall before running this command. This will install all of the packages into the node_modules/@made-mc/ directory.
+
+```
+npm install @mc-made/design-tokens@latest
+npm install @mc-made/css@latest
+npm install @mc-made/icons@latest
+npm install @mc-made/fonts@latest
+```
+
+### Usage
+
+Once you’ve downloaded or installed the NPM package, you can copy-paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load our CSS:
+
+```
+<link rel="stylesheet" href="[path-to-directory]/tokens.css" />
+<link rel="stylesheet" href="[path-to-directory]/made.min.css" />
+<link rel="stylesheet" href="[path-to-directory]/mark-for-mc.css" />
+```
+
+To import in SCSS, include this at the beginning of your main SCSS partial:
+
+```
+"[path-to-directory]/node_modules/@mc-made/design-tokens/web/theme/[theme-name]/tokens";
+"[path-to-directory]/node_modules/@mc-made/css/made.min.css";
+"[path-to-directory]/node_modules/@mc-made/fonts/made-for-mc.css";
+```
+
+You can also import the stylesheets with [CSS custom properties (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties). 
+<small><a href="https://caniuse.com/?search=custom%20properties" target="_blank"> ⚠️ Note: IE11 does not support CSS variables</a></small>
+
+`[path-to-directory]/node_modules/@mc-made/css/src/styles.css",`
+`[path-to-directory]/node_modules/@mc-made/css/src/made-css-variables.css",`
+`[path-to-directory]/node_modules/@mc-made/css/src/made-css-variables.min.css",`
+
+---
+
+## Link to Assets
+
+The following packages are available for usage via the Made domain name.
+
+```
+https://made.mastercard.com/icons/1.0.0/custom/application.svg
+https://made.mastercard.com/css/1.2.1/made.min.css
+https://made.mastercard.com/design-tokens/2.1.1/web/themes/b2b/tokens.css
+https://made.mastercard.com/fonts/1.0.0/mark-for-mc.css
+```
+
+There are also have CSS available for [CSS custom properties (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+
+```
+https://made.mastercard.com/css/1.2.1/made-css-variables.css
+https://made.mastercard.com/css/1.2.1/made-css-variables.min.css
+```
+
+** URL structure **  
+Made uses the following URL structure for the host assets:
+
+`https://made.mastercard.com/<package>/<version>/<file-path>`
+
+### Usage
+
+To fetch e.g. a Design Tokens file using the above format, you would write it like:
+
+
+`<link rel="stylesheet" href="https://made.mastercard.com/design-tokens/2.1.1/web/themes/b2b/tokens.css" />`
+
+
+---
+
+## Migrating to Made.?
+
+Ready to  migrate your current code base to include Made. assets? Each project is different so <a href="https://teams.microsoft.com/l/channel/19%3a2f8b0424ebb647dc8f647f3aa1986733%40thread.skype/%25F0%259F%2592%258EDesign%2520Systems?groupId=50277c80-d4e5-4acf-806c-256c7b81fae9&tenantId=f06fa858-824b-4a85-aacb-f372cfdc282e" target="_blank">get in touch with the Made. team </a> 
+and we can support the migration process and provide solutions on what adoption method suits your projects needs. 
+
+---
+
+
+## Testing
+
+### Supported browsers
+
+Made components are supported in the following browsers. <a href="https://teams.microsoft.com/l/channel/19%3a2f8b0424ebb647dc8f647f3aa1986733%40thread.skype/%25F0%259F%2592%258EDesign%2520Systems?groupId=50277c80-d4e5-4acf-806c-256c7b81fae9&tenantId=f06fa858-824b-4a85-aacb-f372cfdc282e" target="_blank">Get in touch here</a> to report any issues.
+
+| Browser        | Version |
+| -------------- | ------- |
+| Chrome         | Latest    |
+| Safari         | Latest    |
+| Firefox        | Latest    |
+| Microsoft Edge | Latest    |
+
+
+---
+
+
+### Accessibility
+
+Made components are accessibility tested with:
+
+- [storybook-addon-a11y](https://storybook.js.org/addons/@storybook/addon-a11y)
+- [axe DevTools](https://www.deque.com/axe/devtools/)
+- [Wave](https://wave.webaim.org/extension/)

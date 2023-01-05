@@ -1,0 +1,25 @@
+{
+  "name": "made-storybook",
+  "version": "1.0.0",
+  "description": "The Mastercard Adaptive Design Ecosystem, known as Made, is a family of web and mobile design systems.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseph-eccles/made-storybook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joseph-eccles/made-storybook/issues"
+  },
+  "homepage": "https://github.com/joseph-eccles/made-storybook#readme",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^6.1.0"
+  }
+}

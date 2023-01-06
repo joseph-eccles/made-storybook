@@ -1,6 +1,6 @@
 {
   "name": "@joseph-eccles/made",
-  "version": "1.2.1",
+  "version": "1.2.0",
   "description": "CSS for Made Framework Core Components",
   "owner": "Made",
   "main": "index.js",
@@ -46,5 +46,5 @@
     "stylelint-order": "^5.0.0",
     "stylelint-selector-bem-pattern": "^2.1.1"
   },
-  "gitHead": "1e816995a6318b3e6f51e830ac70536b7b58e5ea"
+  "gitHead": "c504c0875bc078a769484e30b422dd7b0aae72c0"
 }

@@ -1,6 +1,6 @@
 {
-  "name": "@joseph-eccles/css",
-  "version": "1.2.0",
+  "name": "@joseph-eccles/made",
+  "version": "1.2.1",
   "description": "CSS for Made Framework Core Components",
   "owner": "Made",
   "main": "index.js",
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joseph-eccles/monorepo.git"
+    "url": "git+https://github.com/joseph-eccles/made-development.git"
   },
   "publishConfig": {
     "@joseph-eccles:registry": "https://npm.pkg.github.com/joseph-eccles"
@@ -32,6 +32,7 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-minify-css": "^1.2.4",
     "gulp-postcss": "^9.0.0",
@@ -42,8 +43,8 @@
     "standard-version": "^9.3.2",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
-    "gulp-cli": "^2.3.0",
     "stylelint-order": "^5.0.0",
     "stylelint-selector-bem-pattern": "^2.1.1"
-  }
+  },
+  "gitHead": "797c7ea2b2be8740a8d1b0b05001ddcc4272864d"
 }

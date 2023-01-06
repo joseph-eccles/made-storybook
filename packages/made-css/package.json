@@ -1,5 +1,5 @@
 {
-  "name": "@joseph-eccles/css",
+  "name": "@joseph-eccles/made",
   "version": "1.2.1",
   "description": "CSS for Made Framework Core Components",
   "owner": "Made",
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joseph-eccles/monorepo.git"
+    "url": "git+https://github.com/joseph-eccles/made-development.git"
   },
   "publishConfig": {
     "@joseph-eccles:registry": "https://npm.pkg.github.com/joseph-eccles"
@@ -45,5 +45,6 @@
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^5.0.0",
     "stylelint-selector-bem-pattern": "^2.1.1"
-  }
+  },
+  "gitHead": "797c7ea2b2be8740a8d1b0b05001ddcc4272864d"
 }

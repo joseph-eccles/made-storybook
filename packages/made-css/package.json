@@ -5,9 +5,7 @@
   "owner": "Made",
   "main": "index.js",
   "files": [
-    "dist/package.json",
-    "dist/README.md",
-    "dist/1.2.1/*"
+    "dist"
   ],
   "repository": {
     "type": "git",

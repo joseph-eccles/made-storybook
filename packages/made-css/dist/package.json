@@ -1,11 +1,11 @@
 {
   "name": "@joseph-eccles/made-css",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "CSS for Made Framework Core Components",
   "owner": "Made",
   "main": "index.js",
   "files": [
-    "dist/package.json", "dist/README.md", "dist/1.2.1/*"
+    "dist"
   ],
   "repository": {
     "type": "git",

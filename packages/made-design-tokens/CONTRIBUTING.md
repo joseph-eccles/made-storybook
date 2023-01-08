@@ -25,7 +25,7 @@ This means we can ensure brand consistency throughout any targeted platform. To 
 
 Made Design Tokens follow best practice as outlined by Nathan Curtis in [Naming Tokens in Design Systems](https://medium.com/eightshapes-llc/naming-tokens-in-design-systems-9e86c7444676)
 
-More info on Made. Design Tokens [Naming Conventions](./NAMING-CONVENTIONS.md).
+For more information on Made. Design Tokens [Naming Conventions](https://made.mastercard.com/storybook-css/?path=/docs/hello-naming-conventions-design-tokens--page) See our documentation on Storybook.
 
 ### Branching 
 
@@ -45,7 +45,7 @@ Please follow the spec to have a successful commit.
 
 Whether you’re proposing an update, a new feature or simply making something better, we welcome contribution. 
 
-Simply contact the Made. team and provide the following information:
+Simply open an issue and provide the following information:
 
 - A brief description of the update you want to propose.
 - Clarify whether it’s a variation of an existing token, format or a new theme
@@ -100,8 +100,6 @@ When contributing to Made., your work should always be done in a branch off of y
 ```
 git checkout -b feature/your-branch-name
 ```
-
-Review [Design Tokens 101](./DESIGN-TOKENS-101.md) for a how to guide on creating new tokens, themes formats and to Design Tokens Checklist before submitting your PR.
 
 **Commit  Changes**  
 When the changes are done, add all changes

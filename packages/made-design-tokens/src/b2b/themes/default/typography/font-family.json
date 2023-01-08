@@ -3,13 +3,13 @@
     "family": {
       "heading": {
         "comment": "Font family for headings (H1,H2 and display text)",
-        "value": "{font.family.light.value}",
+        "value": "MarkOffcForMC-Light, MarkOffcForMC, Arial, Helvetica, sans-serif",
         "themeable": "Yes",
         "type": "fontFamilies"
       },
       "eyebrow": {
         "comment": "Font family for headings (H1,H2 and display text)",
-        "value": "{font.family.bold.value}",
+        "value": "MarkOffcForMC-Bold, MarkOffcForMC, Arial, Helvetica, sans-serif",
         "themeable": "Yes",
         "type": "fontFamilies"
       }

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 27 Jul 2022 17:47:03 GMT
+ * Generated on Sun, 08 Jan 2023 17:13:00 GMT
  */
 
 :root {
@@ -204,6 +204,12 @@
   --made-grid-margin-sm: 0.5rem; /* Margin size on small breakpoint. */
   --made-grid-margin-md: 1rem; /* Margin size on medium breakpoint. */
   --made-grid-margin-lg: 1rem; /* Margin size on large breakpoint. */
+  --made-opacity-0: 0; /* Gives 0% opacity to an element (Hides an element). */
+  --made-opacity-15: 0.15; /* Gives 15% opacity to an element. */
+  --made-opacity-25: 0.25; /* Gives 25% opacity to an element. */
+  --made-opacity-50: 0.5; /* Gives 50% opacity to an element. */
+  --made-opacity-75: 0.75; /* Gives 75% opacity to an element. */
+  --made-opacity-100: 1; /* Gives 100% opacity to an element. */
   --made-shadow-default: 0 2px 10px 0 rgba(20,20,19,0.20); /* Shadow for all content cards, dropdowns, dialogs, datepicker etc. */
   --made-shadow-toggle: 0 5px 10px 0 rgba(20,20,19,0.15), 0 2px 2px 0 rgba(20,20,19,0.3);; /* Shadow on slider on toggle component. */
   --made-size-1-x: 0.25rem; /* Size: 4px */
@@ -246,6 +252,12 @@
   --made-space-18-x: 4.5rem; /* Space: 72px */
   --made-space-19-x: 4.75rem; /* Space: 76px */
   --made-space-20-x: 5rem; /* Space: 80px */
+  --made-time-slow-01: 400ms; /* Large expansion, important system notifications. */
+  --made-time-slow-02: 700ms; /* Background dimming. */
+  --made-time-moderate-01: 150ms; /* Micro-interactions, small expansion, short distance movements. */
+  --made-time-moderate-02: 240ms; /* Expansion, system communication, toast. */
+  --made-time-moderate-fast-01: 70ms; /* Micro-interactions such as button and toggle. */
+  --made-time-moderate-fast-02: 110ms; /* Micro-interactions such as fade. */
   --made-font-family-narrow: MarkForMCNrw, MarkOffcForMC, Arial, Helvetica, sans-serif; /* Use Mark for MC Narrow for text smaller or equal to 14-pixels in all digital applications. It provides greater legibility for body copy, tight columns, or charts. 12-pixels is the minimum size for Narrow. */
   --made-font-family-narrow-medium: MarkForMCNrw-Medium, MarkOffcForMC, Arial, Helvetica, sans-serif; /* Use Mark for MC Narrow for text smaller or equal to 14-pixels in all digital applications. It provides greater legibility for body copy, tight columns, or charts. 12-pixels is the minimum size for Narrow. */
   --made-font-family-narrow-bold: MarkForMCNrw-Bold, MarkOffcForMC, Arial, Helvetica, sans-serif; /* Use Mark for MC Narrow for text smaller or equal to 14-pixels in all digital applications. It provides greater legibility for body copy, tight columns, or charts. 12-pixels is the minimum size for Narrow. */
@@ -348,18 +360,6 @@
   --made-line-height-single: 1; /* Line height for single line text elements displayed in components */
   --made-line-height-default: 1.5; /* Default line height. */
   --made-line-height-heading: 1.25; /* Headings line-height */
-  --made-opacity-0: 0; /* Gives 0% opacity to an element (Hides an element). */
-  --made-opacity-15: 0.15; /* Gives 15% opacity to an element. */
-  --made-opacity-25: 0.25; /* Gives 25% opacity to an element. */
-  --made-opacity-50: 0.5; /* Gives 50% opacity to an element. */
-  --made-opacity-75: 0.75; /* Gives 75% opacity to an element. */
-  --made-opacity-100: 1; /* Gives 100% opacity to an element. */
-  --made-time-slow-01: 400ms; /* Large expansion, important system notifications. */
-  --made-time-slow-02: 700ms; /* Background dimming. */
-  --made-time-moderate-01: 150ms; /* Micro-interactions, small expansion, short distance movements. */
-  --made-time-moderate-02: 240ms; /* Expansion, system communication, toast. */
-  --made-time-moderate-fast-01: 70ms; /* Micro-interactions such as button and toggle. */
-  --made-time-moderate-fast-02: 110ms; /* Micro-interactions such as fade. */
   --made-z-index-modal: 50; /* Used to set the z order layering of modal. */
   --made-z-index-toast: 50; /* Used to set the z order layering of toast. */
   --made-z-index-backdrop: 40; /* Used to set the z order layering of backdrop. */

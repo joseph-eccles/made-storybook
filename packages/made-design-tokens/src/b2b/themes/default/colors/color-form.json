@@ -20,6 +20,12 @@
         }
       },
       "border": {
+        "default": {
+          "comment": "Default border color for forms.",
+          "value": "{color.gray.05.value}",
+          "themeable": "Yes",
+          "type": "color"
+        },
         "disabled": {
           "comment": "Border color for :disabled state of forms.",
           "deprecated": true,
@@ -30,6 +36,12 @@
         }
       },
       "background": {
+        "default": {
+          "comment": "Default background color for forms.",
+          "value": "{color.background.default.value}",
+          "themeable": "Yes",
+          "type": "color"
+        },
         "disabled": {
           "comment": "Background color for :disabled state of forms.",
           "deprecated": true,

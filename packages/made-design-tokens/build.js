@@ -1,13 +1,9 @@
-/* This file adds configuration to design tokens, 
-defining the transformation and formatting of the tokens and assets for each output platform. */
-
 const StyleDictionary = require("style-dictionary");
 const fs = require("fs-extra");
 
-/* paths in which design tokens are built to be packaged and used by consuming teams */
 const iosPath = `ios/MadeDesignTokens/`;
 const androidPath = `android/library/src/partnerbank/`;
-const webPath = `dist/2.2.0/web/`;
+const webPath = `dist/2.1.1/web/themes`;
 
 // before this runs we should clean the directories we are generating files in
 // to make sure they are ✨clean✨
@@ -16,12 +12,12 @@ fs.removeSync(androidPath);
 fs.removeSync(webPath);
 
 const styleDictionary = StyleDictionary.extend({
-  // custom actions that generate colorsets for iOS and copy fonts to iOS folder
+  // custom actions
   action: {
     generateColorsets: require("./actions/ios/colorsets"),
     copyFonts: require("./actions/ios/copyFonts"),
   },
-  // custom transforms included in build, transforms modify a token to a specific platform.
+  // custom transforms
   transform: {
     colorRGB: require("./transforms/colorRGB"),
     colorWeb: require("./transforms/colorWeb"),
@@ -30,10 +26,11 @@ const styleDictionary = StyleDictionary.extend({
     pxToRem: require("./transforms/pxToRem"),
     removePx: require("./transforms/removePx"),
   },
-  // custom formats included in build, formats define the output of a file (blueprint/template).
+  // custom formats
   format: {
     androidDimens: require("./formats/androidDimens"),
     androidFontDimens: require("./formats/androidFontDimens"),
+    icons: require("./formats/icons"),
     iosColor: require("./formats/iosColor"),
     iosFont: require("./formats/iosFont"),
     iosFontSize: require("./formats/iosFontSize"),
@@ -43,8 +40,8 @@ const styleDictionary = StyleDictionary.extend({
     iosTokenType: require("./formats/iosTokenType"),
     iosTokenManager: require("./formats/iosTokenManager"),
     storybook: require("./formats/storybook"),
+    styleguide: require("./formats/styleguide"),
     themeable: require("./formats/theme"),
-    /* cascades global tokens to role based and component specific tokens in JSON (same as outputReferences for CSS) */
     customFormat: function ({ dictionary, options }) {
       return (
         `{ \n` +
@@ -98,16 +95,13 @@ styleDictionary.registerFilter({
 /* Building Android and iOS Tokens */
 styleDictionary
   .extend({
-    /* style dictionary grabs tokens from this folder to modify */
     source: [
       `src/mobileUI/platform/native/themes/partnerbank/colors.json`,
       `src/mobileUI/global/**/*.json`,
     ],
-    /* configure what platforms you want token to transform to */
     platforms: {
       iosColors: {
         buildPath: iosPath,
-        /* default style dictionary transforms and custom transform `colorRGB`*/
         transforms: [`attribute/cti`, `colorRGB`, `name/ti/camel`],
         actions: [`generateColorsets`],
       },
@@ -117,13 +111,9 @@ styleDictionary
         actions: [`copyFonts`],
         files: [
           {
-            /* output folder for iOS Color tokens */
             destination: `Classes/MadeColor.swift`,
-            /* references custom format */
             format: `iosColor`,
-            /* filter color tokens only. See Naming on Style Dictionary for token architecture  */
             filter: (token) => token.attributes.category === `color`,
-            /* cascade values referenced in token to output files.  */
             options: {
               outputReferences: true,
             },
@@ -174,7 +164,6 @@ styleDictionary
           "pxToSp",
         ],
         buildPath: androidPath,
-        /* prefix token names in output files with made e.g. made-color-.. */
         prefix: `made`,
         files: [
           {
@@ -200,25 +189,19 @@ styleDictionary
   })
   .buildAllPlatforms();
 
-/* Building B2B Default Theme: Each Theme should have this code block */
+/* Building B2B src */
 styleDictionary
   .extend({
-    source: [
-      `src/webUI/themes/b2b/default/**/*.json`,
-      `src/assets/branding.json`,
-      `src/webUI/global/**/*.json`,
-      `src/webUI/deprecated/**/*.json`,
-    ],
+    source: [`src/b2b/themes/**/*.json`, `src/global/**/*.json`],
     platforms: {
       css: {
-        buildPath: `${webPath}/themes/b2b/`,
+        buildPath: `${webPath}/b2b/`,
         transforms: [`attribute/cti`, `colorWeb`, `name/cti/kebab`, `pxToRem`],
         prefix: "made",
         files: [
           {
             destination: `tokens.css`,
             format: `css/variables`,
-            /* custom filter to remove deprecated tokens created above */
             filter: `removeDeprecatedTokens`,
           },
           {
@@ -250,7 +233,7 @@ styleDictionary
         ],
       },
       scss: {
-        buildPath: `${webPath}/themes/b2b/`,
+        buildPath: `${webPath}/b2b/`,
         transforms: [`attribute/cti`, `color/hex`, `name/cti/kebab`, `pxToRem`],
         prefix: "made",
         files: [
@@ -275,7 +258,7 @@ styleDictionary
         ],
       },
       less: {
-        buildPath: `${webPath}/themes/b2b/`,
+        buildPath: `${webPath}/b2b/`,
         transforms: [`attribute/cti`, `color/hex`, `name/cti/kebab`, `pxToRem`],
         prefix: "made",
         files: [
@@ -300,7 +283,6 @@ styleDictionary
         ],
       },
       js: {
-        /* this platform generates JSON files we use in Storybook to display token documentation */
         buildPath: `./storybook/`,
         transforms: [`attribute/cti`, `color/hex`, `name/cti/kebab`, `pxToRem`],
         prefix: "made",
@@ -318,7 +300,6 @@ styleDictionary
           },
         ],
       },
-      /* this platform generate JSON files with themeable tokens, we use in Storybook to display token theming documentation */
       theme: {
         buildPath: `./storybook/`,
         transforms: [`attribute/cti`, `color/hex`, `name/cti/kebab`],
@@ -334,7 +315,7 @@ styleDictionary
         ],
       },
       json: {
-        buildPath: `${webPath}/themes/b2b/`,
+        buildPath: `${webPath}/b2b/`,
         transforms: [
           `attribute/cti`,
           `color/hex`,
@@ -360,7 +341,7 @@ styleDictionary
           },
           {
             destination: `tokens.json`,
-            format: `customFormat`, //see line 50
+            format: `customFormat`,
             filter: `removeDeprecatedTokens`,
             options: {
               outputReferences: true,

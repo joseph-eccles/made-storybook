@@ -1,13 +1,3 @@
-/* 
-
-This file is used to output JSON file for Storybook documentation.
-See https://amzn.github.io/style-dictionary/#/tokens?id=category-type-item 
-for more information on how to target a token.
-
-If you add a new token category add to the template below.
-
-*/
-
 module.exports = function (dictionary, options) {
   return (
     `{ "color" : {

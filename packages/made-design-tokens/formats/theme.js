@@ -1,16 +1,3 @@
-/* 
-
-This file is used to output JSON file for Storybook documentation for theming.
-https://made.mastercard.com/storybook-css/?path=/docs/design-tokens-theming--color
-
-
-See https://amzn.github.io/style-dictionary/#/tokens?id=category-type-item 
-for more information on how to target a token.
-
-If you add a new token category add to the template below.
-
-*/
-
 module.exports = function (dictionary, options) {
   return (
     `

@@ -45,6 +45,5 @@
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^5.0.0",
     "stylelint-selector-bem-pattern": "^2.1.1"
-  },
-  "gitHead": "c504c0875bc078a769484e30b422dd7b0aae72c0"
+  }
 }

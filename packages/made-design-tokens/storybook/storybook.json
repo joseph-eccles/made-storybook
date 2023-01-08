@@ -477,25 +477,11 @@
         "original": "COLOR GRAY 07 "
       }, 
      {
-        "name": "made-footer-color-text",
-        "value": "#ffffff",
-        "comment": "Text color on footer component",
-                "themeable": "Yes",
-        "original": "COLOR WHITE "
-      }, 
-     {
         "name": "made-header-color-background",
         "value": "#141413",
         "comment": "Background color for header component",
                 "themeable": "Yes",
         "original": "COLOR GRAY 07 "
-      }, 
-     {
-        "name": "made-header-color-text",
-        "value": "#ffffff",
-        "comment": "Text color on header component",
-                "themeable": "Yes",
-        "original": "COLOR WHITE "
       }, 
      {
         "name": "made-scrollbar-color-background",
@@ -577,27 +563,6 @@
         "original": "COLOR GRAY 03 "
       }, 
      {
-        "name": "made-color-action-background-selected",
-        "value": "#f3f0ee",
-        "comment": "Background color for selected state of UI Elements such as tables, dropdowns...",
-                "themeable": "Yes",
-        "original": "COLOR GRAY 01-5 "
-      }, 
-     {
-        "name": "made-color-action-background-selected-hover",
-        "value": "#e8e5e1",
-        "comment": "Background color for hover state of on selected UI Elements",
-                "themeable": "Yes",
-        "original": "COLOR GRAY 02 "
-      }, 
-     {
-        "name": "made-color-action-background-hover",
-        "value": "#faf7f5",
-        "comment": "Background color for hover state of UI Elements such as tables, dropdowns...",
-                "themeable": "Yes",
-        "original": "COLOR GRAY 01-25 "
-      }, 
-     {
         "name": "made-color-action-background-primary-default",
         "value": "#cf4500",
         "comment": "Background color of primary interactive color e.g primary buttons.",
@@ -668,6 +633,27 @@
         "original": "COLOR ACTION DISABLED "
       }, 
      {
+        "name": "made-color-action-background-selected",
+        "value": "#f3f0ee",
+        "comment": "Background color for selected state of UI Elements such as tables, dropdowns...",
+                "themeable": "Yes",
+        "original": "COLOR GRAY 01-5 "
+      }, 
+     {
+        "name": "made-color-action-background-selected-hover",
+        "value": "#e8e5e1",
+        "comment": "Background color for hover state of on selected UI Elements",
+                "themeable": "Yes",
+        "original": "COLOR GRAY 02 "
+      }, 
+     {
+        "name": "made-color-action-background-hover",
+        "value": "#faf7f5",
+        "comment": "Background color for hover state of UI Elements such as tables, dropdowns...",
+                "themeable": "Yes",
+        "original": "COLOR GRAY 01-25 "
+      }, 
+     {
         "name": "made-color-action-background-on",
         "value": "#038a00",
         "comment": "Background color for on state of UI Elements such as toggle",
@@ -687,20 +673,6 @@
         "comment": "Background color of highlight interactive color. Used on date range in Calendar",
                 "themeable": "No",
         "original": "COLOR ORANGE 01 "
-      }, 
-     {
-        "name": "made-color-action-border-focus",
-        "value": "#cf4500",
-        "comment": "Outline color for focus state.",
-                "themeable": "Yes",
-        "original": "COLOR ACTION PRIMARY DEFAULT "
-      }, 
-     {
-        "name": "made-color-action-border-focus-on-dark",
-        "value": "#ffffff",
-        "comment": "Outline color for focus state on dark backgrounds",
-                "themeable": "Yes",
-        "original": "COLOR WHITE "
       }, 
      {
         "name": "made-color-action-border-primary-default",
@@ -773,6 +745,13 @@
         "original": "COLOR ACTION DISABLED "
       }, 
      {
+        "name": "made-color-action-border-focus",
+        "value": "#cf4500",
+        "comment": "Outline color for focus state.",
+                "themeable": "Yes",
+        "original": "COLOR ACTION PRIMARY DEFAULT "
+      }, 
+     {
         "name": "made-color-action-border-selected-on-light",
         "value": "#cf4500",
         "comment": "Border color for selected items.",
@@ -785,41 +764,6 @@
         "comment": "Border color for selected items on dark background.",
                 "themeable": "No",
         "original": "COLOR ACTION ON-DARK DEFAULT "
-      }, 
-     {
-        "name": "made-color-action-text-on-dark",
-        "value": "#141413",
-        "comment": "Text color on top of interactive color on a dark background",
-                "themeable": "Yes",
-        "original": "COLOR GRAY 07 "
-      }, 
-     {
-        "name": "made-color-action-text-on-disabled",
-        "value": "#ffffff",
-        "comment": "Text color on top of disabled state color",
-                "themeable": "Yes",
-        "original": "COLOR TEXT DEFAULT ON-DARK "
-      }, 
-     {
-        "name": "made-color-action-text-on-hover",
-        "value": "#141413",
-        "comment": "Text color on top of hover state of UI Elements",
-                "themeable": "Yes",
-        "original": "COLOR TEXT DEFAULT ON-LIGHT "
-      }, 
-     {
-        "name": "made-color-action-text-on-selected",
-        "value": "#cf4500",
-        "comment": "Text color on top of selected state of UI Elements",
-                "themeable": "Yes",
-        "original": "COLOR ACTION PRIMARY DEFAULT "
-      }, 
-     {
-        "name": "made-color-action-text-on-selected-hover",
-        "value": "#cf4500",
-        "comment": "Text color on top of hover and selected state of UI Elements",
-                "themeable": "Yes",
-        "original": "COLOR ACTION PRIMARY DEFAULT "
       }, 
      {
         "name": "made-color-action-text-primary-default",
@@ -906,6 +850,41 @@
         "original": "COLOR BRAND ON-SECONDARY "
       }, 
      {
+        "name": "made-color-action-text-on-dark",
+        "value": "#141413",
+        "comment": "Text color on top of interactive color on a dark background",
+                "themeable": "Yes",
+        "original": "COLOR GRAY 07 "
+      }, 
+     {
+        "name": "made-color-action-text-on-disabled",
+        "value": "#ffffff",
+        "comment": "Text color on top of disabled state color",
+                "themeable": "Yes",
+        "original": "COLOR TEXT DEFAULT ON-DARK "
+      }, 
+     {
+        "name": "made-color-action-text-on-hover",
+        "value": "#141413",
+        "comment": "Text color on top of hover state of UI Elements",
+                "themeable": "Yes",
+        "original": "COLOR TEXT DEFAULT ON-LIGHT "
+      }, 
+     {
+        "name": "made-color-action-text-on-selected",
+        "value": "#cf4500",
+        "comment": "Text color on top of selected state of UI Elements",
+                "themeable": "Yes",
+        "original": "COLOR ACTION PRIMARY DEFAULT "
+      }, 
+     {
+        "name": "made-color-action-text-on-selected-hover",
+        "value": "#cf4500",
+        "comment": "Text color on top of hover and selected state of UI Elements",
+                "themeable": "Yes",
+        "original": "COLOR ACTION PRIMARY DEFAULT "
+      }, 
+     {
         "name": "made-link-color-default",
         "value": "#cf4500",
         "comment": "Text color for link",
@@ -943,60 +922,60 @@
         "original": "COLOR GOLD 04 "
       }, 
      {
-        "name": "made-color-feedback-error-light",
-        "value": "#fadede",
-        "comment": "Light color for error state",
-                "themeable": "Yes",
-        "original": "#FADEDE"
+        "name": "made-color-feedback-background-error",
+        "value": "#ee0000",
+        "comment": "Background color for error state",
+                "themeable": "No",
+        "original": "COLOR FEEDBACK ERROR "
       }, 
      {
-        "name": "made-color-feedback-success-light",
-        "value": "#dff7df",
-        "comment": "Light color for success or positive state",
-                "themeable": "Yes",
-        "original": "#DFF7DF"
+        "name": "made-color-feedback-background-success",
+        "value": "#038a00",
+        "comment": "Background color for success or positive state",
+                "themeable": "No",
+        "original": "COLOR FEEDBACK SUCCESS "
       }, 
      {
-        "name": "made-color-feedback-information-light",
-        "value": "#fff4d1",
-        "comment": "Light color for information state",
-                "themeable": "Yes",
-        "original": "COLOR YELLOW 01 "
+        "name": "made-color-feedback-background-information",
+        "value": "#ffc61e",
+        "comment": "Background color for neutral or optional state",
+                "themeable": "No",
+        "original": "COLOR FEEDBACK INFORMATION "
       }, 
      {
-        "name": "made-color-feedback-progress",
-        "value": "#25836d",
-        "comment": "Color for progress states, for example in file upload",
-                "themeable": "Yes",
-        "original": "COLOR TEAL 04 "
+        "name": "made-color-feedback-background-warning",
+        "value": "#f38b00",
+        "comment": "Background color for warning state",
+                "themeable": "No",
+        "original": "COLOR FEEDBACK WARNING "
       }, 
      {
-        "name": "made-color-feedback-text-on-error-light",
-        "value": "#b00606",
-        "comment": "Text color displayed on top of the error color of Light variation of notifications and toasts",
-                "themeable": "Yes",
-        "original": "#B00606"
+        "name": "made-color-feedback-border-error",
+        "value": "#ee0000",
+        "comment": "Border color for error state",
+                "themeable": "No",
+        "original": "COLOR FEEDBACK ERROR "
       }, 
      {
-        "name": "made-color-feedback-text-on-success-light",
-        "value": "#097007",
-        "comment": "Text color displayed on top of the success color of Light variation of notifications and toasts",
-                "themeable": "Yes",
-        "original": "#097007"
+        "name": "made-color-feedback-border-success",
+        "value": "#038a00",
+        "comment": "Border color  for success or positive state",
+                "themeable": "No",
+        "original": "COLOR FEEDBACK SUCCESS "
       }, 
      {
-        "name": "made-color-feedback-text-on-information",
-        "value": "#332805",
-        "comment": "Text color displayed on top of the error color",
-                "themeable": "Yes",
-        "original": "COLOR YELLOW 07 "
+        "name": "made-color-feedback-border-information",
+        "value": "#ffc61e",
+        "comment": "Border color  for neutral or optional state",
+                "themeable": "No",
+        "original": "COLOR FEEDBACK INFORMATION "
       }, 
      {
-        "name": "made-color-feedback-text-on-information-light",
-        "value": "#332805",
-        "comment": "Text color displayed on top of the information color of Light variation of notifications and toasts",
-                "themeable": "Yes",
-        "original": "COLOR YELLOW 07 "
+        "name": "made-color-feedback-border-warning",
+        "value": "#f38b00",
+        "comment": "Border color or for warning state",
+                "themeable": "No",
+        "original": "COLOR FEEDBACK WARNING "
       }, 
      {
         "name": "made-color-feedback-text-error",
@@ -1041,123 +1020,18 @@
         "original": "COLOR TEXT DEFAULT ON-DARK "
       }, 
      {
+        "name": "made-color-feedback-text-on-information",
+        "value": "#ffffff",
+        "comment": "Text color displayed on top of the error color",
+                "themeable": "No",
+        "original": "COLOR TEXT DEFAULT ON-DARK "
+      }, 
+     {
         "name": "made-color-feedback-text-on-warning",
         "value": "#ffffff",
         "comment": "Text color displayed on top of the warning color",
                 "themeable": "No",
         "original": "COLOR TEXT DEFAULT ON-DARK "
-      }, 
-     {
-        "name": "made-color-feedback-background-error",
-        "value": "#ee0000",
-        "comment": "Background color for error state",
-                "themeable": "No",
-        "original": "COLOR FEEDBACK ERROR "
-      }, 
-     {
-        "name": "made-color-feedback-background-error-light",
-        "value": "#fadede",
-        "comment": "Background color for error state of Light variation of notifications and toasts",
-                "themeable": "No",
-        "original": "COLOR FEEDBACK ERROR-LIGHT "
-      }, 
-     {
-        "name": "made-color-feedback-background-success",
-        "value": "#038a00",
-        "comment": "Background color for success or positive state",
-                "themeable": "No",
-        "original": "COLOR FEEDBACK SUCCESS "
-      }, 
-     {
-        "name": "made-color-feedback-background-success-light",
-        "value": "#dff7df",
-        "comment": "Background color for success or positive state for Light variation of notifications and toasts",
-                "themeable": "No",
-        "original": "COLOR FEEDBACK SUCCESS-LIGHT "
-      }, 
-     {
-        "name": "made-color-feedback-background-information",
-        "value": "#ffc61e",
-        "comment": "Background color for neutral or optional state",
-                "themeable": "No",
-        "original": "COLOR FEEDBACK INFORMATION "
-      }, 
-     {
-        "name": "made-color-feedback-background-information-light",
-        "value": "#fff4d1",
-        "comment": "Background color for neutral or optional state of Light variation of notifications and toasts",
-                "themeable": "No",
-        "original": "COLOR FEEDBACK INFORMATION-LIGHT "
-      }, 
-     {
-        "name": "made-color-feedback-background-warning",
-        "value": "#f38b00",
-        "comment": "Background color for warning state",
-                "themeable": "No",
-        "original": "COLOR FEEDBACK WARNING "
-      }, 
-     {
-        "name": "made-color-feedback-background-progress",
-        "value": "#25836d",
-        "comment": "Background color or for progress state",
-                "themeable": "No",
-        "original": "COLOR FEEDBACK PROGRESS "
-      }, 
-     {
-        "name": "made-color-feedback-border-error",
-        "value": "#ee0000",
-        "comment": "Border color for error state",
-                "themeable": "No",
-        "original": "COLOR FEEDBACK ERROR "
-      }, 
-     {
-        "name": "made-color-feedback-border-success",
-        "value": "#038a00",
-        "comment": "Border color  for success or positive state",
-                "themeable": "No",
-        "original": "COLOR FEEDBACK SUCCESS "
-      }, 
-     {
-        "name": "made-color-feedback-border-information",
-        "value": "#ffc61e",
-        "comment": "Border color  for neutral or optional state",
-                "themeable": "No",
-        "original": "COLOR FEEDBACK INFORMATION "
-      }, 
-     {
-        "name": "made-color-feedback-border-error-light",
-        "value": "#fadede",
-        "comment": "Border color for error state",
-                "themeable": "No",
-        "original": "COLOR FEEDBACK ERROR-LIGHT "
-      }, 
-     {
-        "name": "made-color-feedback-border-success-light",
-        "value": "#dff7df",
-        "comment": "Border color  for success or positive state",
-                "themeable": "No",
-        "original": "COLOR FEEDBACK SUCCESS-LIGHT "
-      }, 
-     {
-        "name": "made-color-feedback-border-information-light",
-        "value": "#fff4d1",
-        "comment": "Border color  for neutral or optional state",
-                "themeable": "No",
-        "original": "COLOR FEEDBACK INFORMATION-LIGHT "
-      }, 
-     {
-        "name": "made-color-feedback-border-warning",
-        "value": "#f38b00",
-        "comment": "Border color or for warning state",
-                "themeable": "No",
-        "original": "COLOR FEEDBACK WARNING "
-      }, 
-     {
-        "name": "made-color-feedback-border-progress",
-        "value": "#25836d",
-        "comment": "Border color or for progress state",
-                "themeable": "No",
-        "original": "COLOR FEEDBACK PROGRESS "
       }],
       "form" : [
  
@@ -1534,14 +1408,14 @@
             "value": "MarkOffcForMC-Light, MarkOffcForMC, Arial, Helvetica, sans-serif",
             "comment": "Font family for headings (H1,H2 and display text)",
                 "themeable": "Yes",
-            "original": "FONT FAMILY LIGHT "
+            "original": "MARKOFFCFORMC-LIGHT, MARKOFFCFORMC, ARIAL, HELVETICA, SANS-SERIF"
           }, 
          {
             "name": "made-font-family-eyebrow",
             "value": "MarkOffcForMC-Bold, MarkOffcForMC, Arial, Helvetica, sans-serif",
             "comment": "Font family for headings (H1,H2 and display text)",
                 "themeable": "Yes",
-            "original": "FONT FAMILY BOLD "
+            "original": "MARKOFFCFORMC-BOLD, MARKOFFCFORMC, ARIAL, HELVETICA, SANS-SERIF"
           }],
       "headings" : {
         "one" : [
@@ -2511,27 +2385,6 @@
         "borderRadius" : [
  
               {
-                "name": "made-border-radius-small",
-                "value": "2px",
-                "comment": "Small border radius for UI components",
-                "themeable": "Yes",
-                "original": "{border.radius.01.value}"
-              }, 
-              {
-                "name": "made-border-radius-default",
-                "value": "4px",
-                "comment": "Default border radius for UI components",
-                "themeable": "Yes",
-                "original": "{border.radius.02.value}"
-              }, 
-              {
-                "name": "made-border-radius-large",
-                "value": "8px",
-                "comment": "Large border radius for UI components",
-                "themeable": "Yes",
-                "original": "{border.radius.04.value}"
-              }, 
-              {
                 "name": "made-border-radius-01",
                 "value": "2px",
                 "comment": "Border Radius: 2px",
@@ -2600,6 +2453,27 @@
                 "comment": "Border Radius: 50%",
                 "themeable": "No",
                 "original": "50%"
+              }, 
+              {
+                "name": "made-border-radius-small",
+                "value": "2px",
+                "comment": "Small border radius for UI components",
+                "themeable": "Yes",
+                "original": "{border.radius.01.value}"
+              }, 
+              {
+                "name": "made-border-radius-default",
+                "value": "4px",
+                "comment": "Default border radius for UI components",
+                "themeable": "Yes",
+                "original": "{border.radius.02.value}"
+              }, 
+              {
+                "name": "made-border-radius-large",
+                "value": "8px",
+                "comment": "Large border radius for UI components",
+                "themeable": "Yes",
+                "original": "{border.radius.04.value}"
               }, 
               {
                 "name": "made-button-border-radius",
@@ -3010,16 +2884,10 @@
         "newValue": "var(--made-color-feedback-warning)"
       }, 
      {
-        "old": "made-forms-color-border-disabled",
-        "oldValue": "#e8e5e1",
-        "new": "made-color-action-border-disabled",
-        "newValue": "var(--made-color-action-border-disabled)"
-      }, 
-     {
-        "old": "made-forms-color-background-disabled",
-        "oldValue": "#fcfbfa",
-        "new": "made-color-action-background-disabled",
-        "newValue": "var(--made-color-action-background-disabled)"
+        "old": "made-link-color-disabled",
+        "oldValue": "rgba(207,69,0,0.50)",
+        "new": "made-color-action-text-disabled",
+        "newValue": "var(--made-color-action-text-disabled)"
       }, 
      {
         "old": "made-forms-color-text-placeholder",
@@ -3034,10 +2902,16 @@
         "newValue": "var(--made-color-text-helper)"
       }, 
      {
-        "old": "made-link-color-disabled",
-        "oldValue": "rgba(207,69,0,0.50)",
-        "new": "made-color-action-text-disabled",
-        "newValue": "var(--made-color-action-text-disabled)"
+        "old": "made-forms-color-border-disabled",
+        "oldValue": "#e8e5e1",
+        "new": "made-color-action-border-disabled",
+        "newValue": "var(--made-color-action-border-disabled)"
+      }, 
+     {
+        "old": "made-forms-color-background-disabled",
+        "oldValue": "#fcfbfa",
+        "new": "made-color-action-background-disabled",
+        "newValue": "var(--made-color-action-background-disabled)"
       }],
     "themeable" : [
  
@@ -3194,14 +3068,6 @@
       "original": "color-action-primary-default"
       }, 
      {
-      "name": "made-color-action-border-focus-on-dark",
-      "value": "#ffffff",
-      "comment": "Outline color for focus state on dark backgrounds",
-      "themeable": "Yes",
-      "type": "color",
-      "original": "color-white"
-      }, 
-     {
       "name": "made-color-action-text-on-dark",
       "value": "#141413",
       "comment": "Text color on top of interactive color on a dark background",
@@ -3338,70 +3204,6 @@
       "original": "color-gold-04"
       }, 
      {
-      "name": "made-color-feedback-error-light",
-      "value": "#fadede",
-      "comment": "Light color for error state",
-      "themeable": "Yes",
-      "type": "color",
-      "original": "#FADEDE"
-      }, 
-     {
-      "name": "made-color-feedback-success-light",
-      "value": "#dff7df",
-      "comment": "Light color for success or positive state",
-      "themeable": "Yes",
-      "type": "color",
-      "original": "#DFF7DF"
-      }, 
-     {
-      "name": "made-color-feedback-information-light",
-      "value": "#fff4d1",
-      "comment": "Light color for information state",
-      "themeable": "Yes",
-      "type": "color",
-      "original": "color-yellow-01"
-      }, 
-     {
-      "name": "made-color-feedback-progress",
-      "value": "#25836d",
-      "comment": "Color for progress states, for example in file upload",
-      "themeable": "Yes",
-      "type": "color",
-      "original": "color-teal-04"
-      }, 
-     {
-      "name": "made-color-feedback-text-on-error-light",
-      "value": "#b00606",
-      "comment": "Text color displayed on top of the error color of Light variation of notifications and toasts",
-      "themeable": "Yes",
-      "type": "color",
-      "original": "#B00606"
-      }, 
-     {
-      "name": "made-color-feedback-text-on-success-light",
-      "value": "#097007",
-      "comment": "Text color displayed on top of the success color of Light variation of notifications and toasts",
-      "themeable": "Yes",
-      "type": "color",
-      "original": "#097007"
-      }, 
-     {
-      "name": "made-color-feedback-text-on-information",
-      "value": "#332805",
-      "comment": "Text color displayed on top of the error color",
-      "themeable": "Yes",
-      "type": "color",
-      "original": "color-yellow-07"
-      }, 
-     {
-      "name": "made-color-feedback-text-on-information-light",
-      "value": "#332805",
-      "comment": "Text color displayed on top of the information color of Light variation of notifications and toasts",
-      "themeable": "Yes",
-      "type": "color",
-      "original": "color-yellow-07"
-      }, 
-     {
       "name": "made-color-text-default-on-light",
       "value": "#141413",
       "comment": "Color of body text on light background.",
@@ -3442,14 +3244,6 @@
       "original": "color-gray-07"
       }, 
      {
-      "name": "made-footer-color-text",
-      "value": "#ffffff",
-      "comment": "Text color on footer component",
-      "themeable": "Yes",
-      "type": "color",
-      "original": "color-white"
-      }, 
-     {
       "name": "made-header-color-background",
       "value": "#141413",
       "comment": "Background color for header component",
@@ -3458,20 +3252,20 @@
       "original": "color-gray-07"
       }, 
      {
-      "name": "made-header-color-text",
-      "value": "#ffffff",
-      "comment": "Text color on header component",
-      "themeable": "Yes",
-      "type": "color",
-      "original": "color-white"
-      }, 
-     {
       "name": "made-scrollbar-color-background",
       "value": "#b1ada6",
       "comment": "Background color for scrollbar component",
       "themeable": "Yes",
       "type": "color",
       "original": "color-gray-03"
+      }, 
+     {
+      "name": "made-link-color-default",
+      "value": "#cf4500",
+      "comment": "Text color for link",
+      "themeable": "Yes",
+      "type": "color",
+      "original": "color-action-primary-default"
       }, 
      {
       "name": "made-forms-color-border-default",
@@ -3551,7 +3345,7 @@
       "comment": "Font family for headings (H1,H2 and display text)",
       "themeable": "Yes",
       "type": "fontFamilies",
-      "original": "font-family-light"
+      "original": "MarkOffcForMC-Light, MarkOffcForMC, Arial, Helvetica, sans-serif"
       }, 
      {
       "name": "made-font-family-eyebrow",
@@ -3559,7 +3353,7 @@
       "comment": "Font family for headings (H1,H2 and display text)",
       "themeable": "Yes",
       "type": "fontFamilies",
-      "original": "font-family-bold"
+      "original": "MarkOffcForMC-Bold, MarkOffcForMC, Arial, Helvetica, sans-serif"
       }, 
      {
       "name": "made-font-heading-size-level-01",
@@ -3752,14 +3546,6 @@
       "themeable": "Yes",
       "type": "lineHeights",
       "original": "1-25"
-      }, 
-     {
-      "name": "made-link-color-default",
-      "value": "#cf4500",
-      "comment": "Text color for link",
-      "themeable": "Yes",
-      "type": "color",
-      "original": "color-action-primary-default"
       }]
         }
   }

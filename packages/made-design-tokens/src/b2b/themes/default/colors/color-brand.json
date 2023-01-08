@@ -1,6 +1,18 @@
 {
   "color": {
     "brand": {
+      "primary": {
+        "comment": "The primary color of your brand",
+        "value": "{color.orange.04.value}",
+        "themeable": "Yes",
+        "type": "color"
+      },
+      "secondary": {
+        "comment": "The secondary color of your brand",
+        "value": "{color.orange.04.value}",
+        "themeable": "Yes",
+        "type": "color"
+      },
       "error": {
         "comment": "Color for error state",
         "value": "{color.accent.07.value}",
@@ -31,6 +43,18 @@
         "deprecated": true,
         "deprecated_comment": "made-color-feedback-warning",
         "themeable": "No",
+        "type": "color"
+      },
+      "on-primary": {
+        "comment": "The text color on your primary brand color",
+        "value": "#FFFFFF",
+        "themeable": "Yes",
+        "type": "color"
+      },
+      "on-secondary": {
+        "comment": "The text color on your secondary brand color",
+        "value": "#FFFFFF",
+        "themeable": "Yes",
         "type": "color"
       }
     }
